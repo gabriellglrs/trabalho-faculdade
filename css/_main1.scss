@@ -6,7 +6,7 @@
     background: #91dc5b;
     border-radius: 6px;
     h2{
-        text-align: center;
+        text-align: left;
         font-size: 26px;
     }
     p{
@@ -19,10 +19,17 @@
         font-size: 16px;
         margin-top: 15px;
         margin-bottom: 30px;
+        margin-left: 30px;
         li{
             list-style: outside;
             margin-bottom: 5px;
         }
+    }
+    .li{
+        margin-left: 40px;
+    }
+    .decimal{
+        list-style: decimal;
     }
 
 }
@@ -31,4 +38,8 @@
     display: flex;
     justify-content: center;
     gap: 80px;
+    
+}
+a{
+    color: darkgoldenrod;
 }

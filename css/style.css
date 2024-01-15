@@ -133,7 +133,7 @@ footer p {
   border-radius: 6px;
 }
 .main1 h2 {
-  text-align: center;
+  text-align: left;
   font-size: 26px;
 }
 .main1 p {
@@ -146,10 +146,17 @@ footer p {
   font-size: 16px;
   margin-top: 15px;
   margin-bottom: 30px;
+  margin-left: 30px;
 }
 .main1 ul li {
   list-style: outside;
   margin-bottom: 5px;
+}
+.main1 .li {
+  margin-left: 40px;
+}
+.main1 .decimal {
+  list-style: decimal;
 }
 
 .iframe {
@@ -157,4 +164,8 @@ footer p {
   display: flex;
   justify-content: center;
   gap: 80px;
+}
+
+a {
+  color: darkgoldenrod;
 }/*# sourceMappingURL=style.css.map */
