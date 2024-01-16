@@ -159,7 +159,8 @@ footer p {
 }
 
 .iframe {
-  margin-top: 80px;
+  margin-top: 50px;
+  margin-bottom: 50px;
   display: flex;
   justify-content: center;
   gap: 80px;
