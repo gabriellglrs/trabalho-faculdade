@@ -13,7 +13,7 @@ header {
         font-size: 64px;
         font-weight: 600;
     }
-    @include responsivo(900px) {
+    @include responsivo(950px) {
         h1 {
             font-size: 44px;
         }

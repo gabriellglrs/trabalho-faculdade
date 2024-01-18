@@ -63,7 +63,7 @@ header h1 {
   font-size: 64px;
   font-weight: 600;
 }
-@media (max-width: 900px) {
+@media (max-width: 950px) {
   header h1 {
     font-size: 44px;
   }
