@@ -1,3 +1,4 @@
+@import "mixins";
 footer {
     width: 100%;
     height: 110px;
@@ -13,4 +14,28 @@ footer {
         font-weight: 600;
         line-height: normal;
     }
+    @include responsivo(834px){
+        p{
+            font-size: 28px;
+        }
+    }
+    @include responsivo(768px){
+        height: 90px;
+        p{
+            font-size: 28px;
+        }
+    }
+    @include responsivo(430px){
+        height: 60px;
+        p{
+            font-size: 18px;
+        }
+    }
+    @include responsivo(375px){
+        height: 50px;
+        p{
+            font-size: 13px;
+        }
+    }
+   
 }

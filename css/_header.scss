@@ -1,14 +1,52 @@
+@import "mixins";
+
 header {
     margin-top: 70px !important;
     margin-bottom: 70px !important;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+
     h1 {
         font-family: "Inter", sans-serif;
         color: #000;
         font-size: 64px;
         font-weight: 600;
+    }
+    @include responsivo(900px) {
+        h1 {
+            font-size: 44px;
+        }
+        img {
+            width: 250px;
+        }
+    }
+    @include responsivo(768px) {
+        margin-top: 45px !important;
+    margin-bottom: 45px !important;
+        h1 {
+            font-size: 38px;
+        }
+        img {
+            width: 200px;
+        }
+    }
+    @include responsivo(430px) {
+        margin-top: 30px !important;
+    margin-bottom: 30px !important;
+        h1 {
+            font-size: 22px;
+        }
+        img {
+            width: 120px;
+        }
+    }
+    @include responsivo(375px) {
+        h1 {
+            font-size: 19px;
+        }
+        img {
+            width: 95px;
+        }
     }
 }
