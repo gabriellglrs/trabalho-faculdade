@@ -241,6 +241,7 @@ footer p {
 .main1 {
   padding: 32px;
   background: #91dc5b;
+  border-radius: 5px;
 }
 .main1 h2 {
   text-align: left;
