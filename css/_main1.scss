@@ -1,47 +1,88 @@
-.main1{
-    width: 100%;
-    max-width: 124.6rem;
-    padding: 5rem;
-    margin: 0 auto;
+@import "mixins";
+.main1 {
+    padding: 32px;
     background: #91dc5b;
-    border-radius: 6px;
-    h2{
+    h2 {
         text-align: left;
         font-size: 26px;
     }
-    p{
+    p {
         font-size: 18px;
         margin-top: 30px;
         margin-bottom: 30px;
         font-weight: 400;
     }
-    ul{
+    ul {
         font-size: 16px;
         margin-top: 15px;
         margin-bottom: 30px;
         margin-left: 30px;
-        li{
+        li {
             list-style: outside;
             margin-bottom: 5px;
         }
     }
-    .li{
+    .li {
         margin-left: 40px;
     }
-    .decimal{
+    .decimal {
         list-style: decimal;
     }
-
+    @include responsivo(900px) {
+        h2 {
+            font-size: 24px;
+        }
+        p {
+            font-size: 19px;
+        }
+        ul {
+            font-size: 17px;
+        }
+    }
+    @include responsivo(430px) {
+        h2 {
+            font-size: 20px;
+        }
+        p {
+            font-size: 17px;
+        }
+        ul {
+            font-size: 15px;
+        }
+    }
 }
-.iframe{
+.iframe {
     margin-top: 50px;
     margin-bottom: 50px;
-
     display: flex;
     justify-content: center;
     gap: 80px;
-    
+    @include responsivo(900px) {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    @include responsivo(430px) {
+        gap: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        iframe {
+            width: 400px;
+            height: 300px;
+        }
+    }
+    @include responsivo(390px) {
+        gap: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        iframe {
+            width: 330px;
+            height: 280px;
+        }
+    }
 }
-a{
+a {
     color: darkgoldenrod;
 }
